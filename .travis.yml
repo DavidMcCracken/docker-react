@@ -6,4 +6,4 @@ before_install:
 
 
 script:
- - docker run twokdavey/docker-react npm run test -- --coverage
+ - docker run -e CI=true twokdavey/docker-react npm run test
